@@ -1,0 +1,52 @@
+.receipt-container {
+    position: absolute;
+    display: none;
+    left: 20%;
+    top: 0;
+    width: 30rem;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    flex-direction: column;
+    background-color: whitesmoke;
+    box-shadow: .2rem .2rem .2rem .2rem black;
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4rem;
+        font-weight: bold;
+        margin-left: 4rem;
+
+        span {
+            display: flex;
+            font-weight: normal;
+            height: 4rem;
+            margin: 2rem;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    }
+    .title {
+        font-weight: bold;
+    }
+    .close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: #4C8C72;
+        cursor: pointer;
+
+        &:hover{
+            color: red;
+        }
+    }
+    input {
+        border: none;
+        font-size: 2rem;
+        border-radius: .1rem;
+        background-color: whitesmoke;
+        cursor: text;
+    }
+}

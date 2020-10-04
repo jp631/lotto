@@ -1,0 +1,47 @@
+.search-input-container {
+    display: flex;
+    flex-direction: row;
+    border: .1rem solid #4C8C72;
+    min-width: 20rem;
+    height: 3.5rem;
+    justify-content: flex-end;
+    border-radius: .5rem;
+    transition: all .2s;
+
+    input {
+        width: 20rem;
+        border: none;
+        background-color: transparent;
+        padding-left: 1rem;
+        transition: all .2s;
+
+        
+        &::placeholder{
+            color: #4C8C72;
+        }
+
+        &:hover,
+        &:focus {
+            width: 24rem;
+            color: inherit;
+            outline: none;
+        }
+    }
+
+    button {
+        font-size: 2.5rem;
+        border: none;
+        width: 5rem;
+        background-color: #4C8C72;
+        color: whitesmoke;
+        outline: none;
+        cursor: pointer;
+
+        &:hover {
+            filter: contrast(2);
+            
+
+        }
+
+    }
+}

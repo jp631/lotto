@@ -1,0 +1,81 @@
+.tableHolder{
+.table {
+    position: relative;
+    width: 87vw;
+
+    .table-header-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-top: .1rem solid rgba(76, 140, 114, .1);
+        
+
+
+        .table-header-item{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            padding-right: 2rem;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-bottom: .1rem solid rgba(76, 140, 114, .1);
+            height: 3rem;
+            &:last-child{
+                border-right: .1rem solid rgba(76, 140, 114, .1);
+            }
+        }
+    }
+
+    .table-item {
+        position: relative;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        border-bottom: .1rem solid rgba(76, 140, 114, .1);
+
+        .item{
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 4rem;
+            font-size: 2rem;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            border-right: .1rem solid rgba(76, 140, 114, .1);
+            
+
+            .receipt {
+                position: absolute;
+                right: .5rem;
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+.switchClient {
+    font-size: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5rem;
+    
+
+    .icon {
+     cursor: pointer;
+     color: rgb(76, 140, 114);
+
+        &:hover {
+            filter: brightness(1.2);
+        }
+    }
+  
+}
+}

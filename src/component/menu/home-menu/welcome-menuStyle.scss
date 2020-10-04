@@ -1,0 +1,14 @@
+.welcomeMenu-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 20em;
+
+    .item{
+        font-size: 10rem;
+        margin: 2rem;
+        color: #4C8C72;
+       
+    }
+}

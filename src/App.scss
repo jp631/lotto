@@ -1,0 +1,20 @@
+.app {
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    grid-template-rows: minmax(10rem, max-content) auto;
+
+    .headerPlacement{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .sidePanelPlacement{
+        grid-column: 1;
+        grid-row: 1/-1;
+    }
+    .middle-placement{
+        grid-column: 2;
+        grid-row: 2;
+        padding-top: 5rem;
+    }
+}

@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%; /** which is equal to 1rem (10px is the front size we want / 16px is the default front of the browser * 100 is the percentage)  */
+}
+body {
+    box-sizing: border-box;
+}
+
+::selection {
+    /* background-color: $color-primary;
+    color: $color-white; */
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover{
+  filter: contrast(3);
+}
