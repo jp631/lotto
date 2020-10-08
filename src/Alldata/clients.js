@@ -2,7 +2,7 @@ export const clients = [
     {
         name: 'Deal boul',
         plan: 'gold',
-        email: 'examaple@gmail.com',
+        email: 'exasdmaple@gmail.com',
         phone: '423-434-3434',
         shopKey: "1212-1212-d2d-232dds-32ffdf",
         password: 'hash',
@@ -21,7 +21,7 @@ export const clients = [
     {
         name: 'coraloame boul',
         plan: 'Silver',
-        email: 'examaple@gmail.com',
+        email: 'examsaple@gmail.com',
         phone: '423-434-3434',
         shopKey: "1212-1212-d2d-232dds-32ffdf",
         password: 'hash',
@@ -40,7 +40,7 @@ export const clients = [
     {
         name: 'Erold Milk',
         plan: 'gold',
-        email: 'coraloame@gmail.com',
+        email: 'corasloame@gmail.com',
         phone: '423-434-3434',
         shopKey: "1212-1212-d2d-232dds-32ffdf",
         password: 'hash',
@@ -59,7 +59,7 @@ export const clients = [
     {
         name: 'Dina Solange',
         plan: 'gold',
-        email: 'examaple@gmail.com',
+        email: 'examsaaple@gmail.com',
         phone: '423-434-3434',
         shopKey: "1212-1212-d2d-232dds-32ffdf",
         password: 'hash',
@@ -117,7 +117,7 @@ export const clients = [
     {
         name: 'Josh Experience',
         plan: 'Silver',
-        email: 'Experience@gmail.com',
+        email: 'Experiencae@gmail.com',
         phone: '423-434-3434',
         shopKey: "1212-1212-d2d-232dds-32ffdf",
         password: 'hash',

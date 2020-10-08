@@ -1,64 +1,94 @@
-.tableHolder{
-.table {
+.tableHolder {
     position: relative;
-    width: 87vw;
+    top: 5rem;
 
-    .table-header-container{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        border-top: .1rem solid rgba(76, 140, 114, .1);
-        
-
-
-        .table-header-item{
-            display: flex;
-            width: 100%;
-            align-items: center;
-            align-content: center;
-            justify-content: center;
-            padding-right: 2rem;
-            font-size: 2.5rem;
-            text-transform: uppercase;
-            font-weight: bold;
-            border-bottom: .1rem solid rgba(76, 140, 114, .1);
-            height: 3rem;
-            &:last-child{
-                border-right: .1rem solid rgba(76, 140, 114, .1);
-            }
-        }
+    @media (min-width: 1000px) {
+        top: 0;
     }
 
-    .table-item {
+    .table {
         position: relative;
-        display: flex;
         width: 100%;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        border-bottom: .1rem solid rgba(76, 140, 114, .1);
 
-        .item{
+        @media (min-width: 1000px) {
+        }
+
+        .table-header-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-top: 0.1rem solid rgba(76, 140, 114, 0.1);
+
+            @media (min-width: 1000px) {
+            }
+
+            .table-header-item {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                padding-right: 2rem;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                border-bottom: 0.1rem solid rgba(76, 140, 114, 0.1);
+                height: 3rem;
+                color: rgb(76, 140, 114);
+                &:last-child {
+                    border-right: 0.1rem solid rgba(76, 140, 114, 0.1);
+                }
+                @media (min-width: 500px) {
+                    font-size: 2rem;
+                }
+
+                @media (min-width: 1000px) {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        .table-item {
             position: relative;
             display: flex;
             width: 100%;
-            height: 4rem;
-            font-size: 2rem;
             align-items: center;
             align-content: center;
             justify-content: center;
-            border-right: .1rem solid rgba(76, 140, 114, .1);
-            
+            border-bottom: 0.1rem solid rgba(76, 140, 114, 0.1);
 
-            .receipt {
-                position: absolute;
-                right: .5rem;
-                font-size: 1.5rem;
-                cursor: pointer;
+            .item {
+                position: relative;
+                display: flex;
+                width: 100%;
+                height: 4rem;
+                font-size: 1rem;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                border-right: 0.1rem solid rgba(76, 140, 114, 0.1);
+
+                @media (min-width: 500px) {
+                    font-size: 1.3rem;
+                }
+                @media (min-width: 900px) {
+                    font-size: 2rem;
+                }
+
+                .receipt {
+                    position: absolute;
+                    top: 2.5rem;
+                    right: 0.5rem;
+                    font-size: 1rem;
+                    cursor: pointer;
+
+                    @media (min-width: 1000px) {
+                        font-size: 1.5rem;
+                    }
+                }
             }
         }
     }
-
 }
 .switchClient {
     font-size: 3rem;
@@ -66,16 +96,15 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 5rem;
-    
+    @media (min-width: 1000px) {
+    }
 
     .icon {
-     cursor: pointer;
-     color: rgb(76, 140, 114);
+        cursor: pointer;
+        color: rgb(76, 140, 114);
 
         &:hover {
             filter: brightness(1.2);
         }
     }
-  
-}
 }

@@ -1,20 +1,63 @@
 .app {
-    display: grid;
-    grid-template-columns: 15rem 1fr;
-    grid-template-rows: minmax(10rem, max-content) auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-width: 400px;
+
+    @media (min-width: 1000px) {
+        display: grid;
+        grid-template-columns: 15rem 1fr;
+        grid-template-rows: minmax(10rem, max-content) auto;        
+    }
 
     .headerPlacement{
-        grid-column: 2;
-        grid-row: 1;
+
+        @media (min-width: 1000px) {
+            grid-column: 2;
+            grid-row: 1;
+        }
     }
 
     .sidePanelPlacement{
-        grid-column: 1;
-        grid-row: 1/-1;
+        position: fixed;
+        width: 16rem;
+        top: 0rem;
+        bottom: 0;
+        z-index: 1;
+        transition: all .2s;
+
+        @media (min-width: 1000px) {
+            position: relative;
+            grid-column: 1;
+            grid-row: 1/-1;
+            display: inline;
+            left: 0;
+        }
+
+        .icon {
+            position: absolute;
+            top: 5.5rem;
+            font-size: 5rem;
+            z-index: 1;
+            transition: all .2s;
+             color: #4C8C72;
+
+             @media (min-width: 500px) {
+                top: 6rem;
+             }
+            
+            @media (min-width: 1000px) {
+                display: none;
+            }
+        }
     }
     .middle-placement{
-        grid-column: 2;
-        grid-row: 2;
-        padding-top: 5rem;
+
+        @media (min-width: 1000px) {
+            grid-column: 2;
+            grid-row: 2;
+            padding-top: 5rem;
+        }
     }
 }
+

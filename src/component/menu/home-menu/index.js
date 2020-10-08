@@ -5,7 +5,7 @@ import Zoom from 'react-reveal/Zoom';
 
 import { Link } from 'react-router-dom';
 
-import './welcome-menuStyle.scss'
+import './home-menuStyle.scss'
 const HomeMenu = () => {
     return (
         <Zoom delay={300}>

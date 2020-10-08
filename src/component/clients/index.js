@@ -5,15 +5,31 @@ import Slide from 'react-reveal/Slide';
 import {SearchInput} from '../../utils/utilsComponent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleLeft, faAngleDoubleRight} from '@fortawesome/free-solid-svg-icons'
+// import { AllClients } from '../../Alldata/dataBase';
+
+import { clientData, lottoData } from '../../Alldata/database_request';
+
 
 class DisplayClients extends Component {
     constructor(props){
         super(props)
         this.state = {
             clients: clients,
+            clientData: null,
+            lottoData: null,
             isReceiptWindow: false
         }
     }
+    
+     UNSAFE_componentWillMount(){
+        this.setState({
+            AllClientsTO: lottoData()
+        }, ()=>{
+            console.log('before loading')
+            console.log(this.state.AllClientsTO)
+            console.log('after loading')
+        })
+     }
 
     openwindow = ()=>{
         this.closewindow();
@@ -58,6 +74,7 @@ class DisplayClients extends Component {
                     <div className='table-header-item'>email</div>
                 </div>
                 {
+                  
                     clients.map((client, i) => (
                     <Slide key={client.email} right delay={100 * i}>
                         <Client 
@@ -79,6 +96,12 @@ class DisplayClients extends Component {
                     <FontAwesomeIcon icon={faAngleDoubleRight} className='icon' style={{margin: 'auto 2rem'}}/>
 
                 </div>
+                {
+                      console.log('see client')
+                }
+                {
+                    console.log( this.state.AllClientsTO)
+                }
         </div>
     );
     }

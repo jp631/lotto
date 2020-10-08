@@ -25,7 +25,7 @@ const SideMenu = () => {
                     <FontAwesomeIcon icon={faUserCog} /> 
                     Clients
                 </Link>
-                <Link>
+                <Link to='./other'>
                     <FontAwesomeIcon icon={faCog} /> 
                     Other
                 </Link>

@@ -3,7 +3,6 @@ import Receipt from '../../component/receipt'
 import './clients.scss';
 import {getGreaterDate } from '../../utils/utilFunctions';
 
-
 const Client  = (props)=> {
     const {openwindow, closewindow, isReceiptWindow,
     name, result, status, game, ticket, seller, date, 
@@ -17,21 +16,7 @@ const Client  = (props)=> {
                 <div className='item'>{phone}</div>
                 <div className='item'>{email}</div>
             </div>
-            {
-               lotto ? 
-                 lotto.filter( item => {
-                     let a = new Date(item.date)
-                     if(a.getMonth() > 9){
-                    //     console.log(a)
-                     }
-                 })
-                : ''
-            }
-            {
-             console.log('item finish loading')
-
-            }
-            {/* <Receipt
+            <Receipt
                 name={name}
                 result={result}
                 status={status}
@@ -42,7 +27,7 @@ const Client  = (props)=> {
                 lotto={lotto}
 
              closewindow={closewindow}
-              isReceiptWindow = {isReceiptWindow} /> */}
+              isReceiptWindow = {isReceiptWindow} />
         </div>
     );
 };
